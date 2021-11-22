@@ -1,0 +1,31 @@
+.navigation-wrapper {
+    display: flex;
+    max-width: 1377px;
+    margin: 0 auto;
+}
+
+.navigation-container {
+    display: flex;
+    list-style: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+    min-width: 150px;
+    justify-content: space-between;
+
+    a {
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        color: #495057;
+        vertical-align: middle;
+        border-bottom: 2px solid transparent;
+
+        &:hover,
+        &.active {
+            border-bottom: 2px solid #003184;
+        }
+    }
+
+    
+}

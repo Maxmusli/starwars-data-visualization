@@ -1,0 +1,40 @@
+.bar-chart-wrapper {
+    max-width: 1377px;
+    margin: 0 auto;
+}
+
+.action-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    max-width: 550px;
+
+    button {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 10px;
+        border: 1px solid transparent;
+        background: lightgrey;
+        border-radius: 2px;
+        color: #495057;
+        transition: all 0.25s ease;
+        text-decoration: none;
+
+        &:hover {
+            border: 1px solid #399DD3;
+            cursor: pointer;
+        }
+
+        &.active {
+            background-color: #399DD3;
+            color: white;
+            transition: all 0.25s ease;
+        }
+    }
+}
+
+.chart-container {
+    min-height: 1000px;
+    min-width: 1000px;
+    margin-top: 20px
+}

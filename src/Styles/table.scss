@@ -1,0 +1,31 @@
+.table-wrapper {
+    max-width: 1377px;
+    margin: 0 auto;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.table {
+    border: 1px solid black;
+    margin-top: 20px;
+    border-collapse: collapse;
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+
+    th:nth-child(1), td:nth-child(1) {
+        text-align: left;
+        width: 10%;
+    }
+    tbody {
+        tr:nth-child(odd) {
+            background-color: #dddddd;
+        }
+    }
+}

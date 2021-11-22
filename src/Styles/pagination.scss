@@ -1,0 +1,78 @@
+@mixin build-pagination-style($border-radius: 0px) {
+    > li > button {
+        border-radius: $border-radius;
+    }
+}
+
+@mixin build-pagination-size(
+  $font-size: 16px,
+  $padding: 0px 10px,
+  $height: 30px
+) {
+  > li > button {
+    font-size: $font-size;
+    padding: $padding;
+    height: $height;
+  }
+}
+
+.pagination {
+    display: inline-flex;
+    list-style: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+
+    @include build-pagination-style();
+    @include build-pagination-size();
+
+    > li {
+        > button {
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid transparent;
+            background: lightgrey;
+            border-radius: 2px;
+            color: #495057;
+            transition: all 0.25s ease;
+            text-decoration: none;
+
+            &:hover,
+            &:active,
+            &:focus,
+            &:visited {
+                text-decoration: none;
+            }
+
+            &:hover,
+            &:focus {
+                border: 1px solid #399DD3;
+                cursor: pointer;
+            }
+        }
+
+    + li {
+        margin-left: 20px;
+    }
+
+    .icon-more {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    &.active {
+        > button {
+            background-color: #399DD3;
+            color: white;
+            transition: all 0.25s ease;
+        }
+    }
+  }
+
+  // Modifiers
+
+    &.pagination--rounded {
+        @include build-pagination-style(2rem);
+    }
+}
