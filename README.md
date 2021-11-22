@@ -26,6 +26,8 @@ src/
 |  |- Styles/ _____________________________ # sass 
 |  |- Utilities/ __________________________ # helper functions
 
+````
+
 ### Installation
 
 1- Clone the repository
