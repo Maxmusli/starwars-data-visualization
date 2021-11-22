@@ -6,8 +6,6 @@ Data visualization dashboard for SWAPI
 
 [Installation](#installation)
 
-[Technologies used](#technologies-used)
-
 ### Project structure
 
 ````
